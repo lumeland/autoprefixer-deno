@@ -18,6 +18,7 @@ await convert({
     },
   },
   copy: {
+    "mod.js": "mod.js",
     "deps.js": "lib/deps.js",
     "test": "test",
     "autoprefixer/test/cases": "test/cases",

@@ -1,5 +1,5 @@
 import { assert, assertEquals, postcss } from "./deps.js";
-import autoprefixer from "../lib/autoprefixer.js";
+import autoprefixer from "../mod.js";
 
 let grider = autoprefixer({
   overrideBrowserslist: ["Chrome 25", "Edge 12", "IE 10"],
