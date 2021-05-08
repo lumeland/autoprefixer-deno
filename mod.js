@@ -1,3 +1,3 @@
-import plugin from "./lib/autoprefixer.js";
-export * from "./lib/autoprefixer.js";
-export default plugin;
+import autoprefixer from "./lib/autoprefixer.js";
+
+export default autoprefixer;

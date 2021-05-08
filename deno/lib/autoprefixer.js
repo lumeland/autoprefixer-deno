@@ -148,19 +148,19 @@ function plugin(...reqs) {
   };
 }
 
-export const postcss = true;
+plugin.postcss = true;
 
 /**
  * Autoprefixer data
  */
-export const data = autoprefixerData;
+plugin.data = autoprefixerData;
 
 /**
  * Autoprefixer default browsers
  */
-export const defaults = browserslist.defaults;
+plugin.defaults = browserslist.defaults;
 
 /**
  * Inspect with default Autoprefixer
  */
-export const info = () => plugin().info();
+plugin.info = () => plugin().info();

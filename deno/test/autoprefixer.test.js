@@ -200,6 +200,10 @@ Deno.test("sets options via browsers as arguments and options object", () => {
   assertEquals(instance.browsers, browsers);
 });
 
+Deno.test("has default browsers", () => {
+  assert(autoprefixer.defaults.length > 0);
+});
+
 Deno.test("add prefix for backface-visibility for Safari 9", () => {
   let input = "a{ " + "backface-visibility: hidden; " +
     "transform-style: preserve-3d }";
