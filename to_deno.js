@@ -9,7 +9,6 @@ await convert({
   modules: {
     "": "mod.js",
     "deps.js": "lib/deps.js",
-    // Or an object with options
     "lib/utils.js": {
       default: false,
     },
@@ -22,9 +21,5 @@ await convert({
     "deps.js": "lib/deps.js",
     "test": "test",
     "autoprefixer/test/cases": "test/cases",
-  },
-  beforeConvert(src, { replaceAll, rename }) {
-  },
-  afterConvert(src, { replaceAll }) {
   },
 });
