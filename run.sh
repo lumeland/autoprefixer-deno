@@ -3,8 +3,7 @@ rm -rf deno
 rm -rf autoprefixer
 
 # Clone the repo
-# git clone --depth 1 --branch main https://github.com/postcss/autoprefixer.git
-git clone --depth 1 --branch main https://github.com/oscarotero/autoprefixer.git
+git clone --depth 1 --branch main https://github.com/postcss/autoprefixer.git
 
 # Run the script
 deno run --unstable --allow-write --allow-read to_deno.js 

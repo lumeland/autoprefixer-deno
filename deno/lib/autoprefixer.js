@@ -6,7 +6,7 @@ import Prefixes from "./prefixes.js";
 import dataPrefixes from "../data/prefixes.js";
 import getInfo from "./info.js";
 
-const autoprefixerData = { browsers: agents, prefixes: dataPrefixes };
+let autoprefixerData = { browsers: agents, prefixes: dataPrefixes };
 
 const WARNING = "\n" +
   "  Replace Autoprefixer `browsers` option to Browserslist config.\n" +
