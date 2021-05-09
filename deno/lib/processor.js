@@ -692,8 +692,8 @@ class Processor {
         }
       } else if (typeof this.prefixes.options.grid !== "undefined") {
         value = this.prefixes.options.grid;
-      } else if (typeof Deno.env.AUTOPREFIXER_GRID !== "undefined") {
-        if (Deno.env.AUTOPREFIXER_GRID === "autoplace") {
+      } else if (typeof Deno.env.get("AUTOPREFIXER_GRID") !== "undefined") {
+        if (Deno.env.get("AUTOPREFIXER_GRID") === "autoplace") {
           value = "autoplace";
         } else {
           value = true;
