@@ -6,9 +6,9 @@ export { default as featureQueries } from "https://jspm.dev/caniuse-lite@1.0.300
 export { default as range } from "https://jspm.dev/normalize-range@0.1.2";
 export { default as FractionJs } from "https://jspm.dev/fraction.js@4.0.13";
 
-import postcss from "https://deno.land/x/postcss@8.2.14/mod.js";
+import postcss from "https://deno.land/x/postcss@8.3.0.1/mod.js";
 const { list, Fraction, parse } = postcss;
-export { Fraction, list, parse };
+export { list, parse };
 
 export const feature = caniuse_lite.feature;
 export const unpack = feature.unpack;
