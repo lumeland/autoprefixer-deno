@@ -531,7 +531,7 @@ function insertAreas(css, isDisabled) {
         if (lastRule) {
           lastRuleIndex = css.index(lastRule);
         } else {
-          /* istanbul ignore next */
+          /* c8 ignore next 2 */
           lastRuleIndex = -1;
         }
 

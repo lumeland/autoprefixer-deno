@@ -1,0 +1,23 @@
+::-webkit-file-upload-button {
+  background: black
+}
+
+::file-selector-button {
+  background: black
+}
+
+input::-webkit-file-upload-button {
+	color: black;
+}
+
+input::file-selector-button {
+	color: black;
+}
+
+input:hover::-webkit-file-upload-button {
+	color: white;
+}
+
+input:hover::file-selector-button {
+	color: white;
+}

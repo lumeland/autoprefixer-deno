@@ -1,6 +1,6 @@
 import { browserslist } from "./deps.js";
 import { agents } from "./deps.js";
-import { colorette } from "./deps.js";
+import { pico } from "./deps.js";
 import Browsers from "./browsers.js";
 import Prefixes from "./prefixes.js";
 import dataPrefixes from "../data/prefixes.js";
@@ -38,12 +38,17 @@ function timeCapsule(result, prefixes) {
   if (Object.keys(prefixes.add).length > 2) {
     return;
   }
-
-  /* istanbul ignore next */
+  /* c8 ignore next 11 */
   result.warn(
-    "Greetings, time traveller. " +
-      "We are in the golden age of prefix-less CSS, " +
-      "where Autoprefixer is no longer needed for your stylesheet.",
+    "Autoprefixer target browsers do not need any prefixes." +
+      "You do not need Autoprefixer anymore.\n" +
+      "Check your Browserslist config to be sure that your targets " +
+      "are set up correctly.\n" +
+      "\n" +
+      "  Learn more at:\n" +
+      "  https://github.com/postcss/autoprefixer#readme\n" +
+      "  https://github.com/browserslist/browserslist#readme\n" +
+      "\n",
   );
 }
 
@@ -81,18 +86,11 @@ function plugin(...reqs) {
     reqs = options.overrideBrowserslist;
   } else if (options.browsers) {
     if (typeof console !== "undefined" && console.warn) {
-      if (colorette.red) {
-        console.warn(
-          colorette.red(
-            WARNING.replace(
-              /`[^`]+`/g,
-              (i) => colorette.yellow(i.slice(1, -1)),
-            ),
-          ),
-        );
-      } else {
-        console.warn(WARNING);
-      }
+      console.warn(
+        pico.red(
+          WARNING.replace(/`[^`]+`/g, (i) => pico.yellow(i.slice(1, -1))),
+        ),
+      );
     }
     reqs = options.browsers;
   }

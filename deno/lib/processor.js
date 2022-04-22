@@ -501,6 +501,9 @@ class Processor {
         return true;
       }
     }
+    if (node.type === "decl" && node.prop === "content") {
+      return true;
+    }
 
     return this.disabled(node, result);
   }

@@ -513,6 +513,26 @@ f(
     }),
 );
 
+// File selector button
+import { prefixFileSelectorButton } from "../lib/deps.js";
+
+f(prefixFileSelectorButton, (browsers) =>
+  prefix(["::file-selector-button"], {
+    selector: true,
+    feature: "file-selector-button",
+    browsers,
+  }));
+
+// :autofill
+import { prefixAutofill } from "../lib/deps.js";
+
+f(prefixAutofill, (browsers) =>
+  prefix([":autofill"], {
+    selector: true,
+    feature: "css-autofill",
+    browsers,
+  }));
+
 // Tab size
 import { prefixTabsize } from "../lib/deps.js";
 
@@ -557,7 +577,7 @@ f(
   prefixIntrinsic,
   { match: /x|\s#4/ },
   (browsers) =>
-    prefix(["fill", "fill-available", "stretch"], {
+    prefix(["fill", "fill-available"], {
       props: sizeProps,
       feature: "intrinsic-width",
       browsers,
@@ -568,6 +588,16 @@ f(prefixIntrinsic, { match: /x|\s#5/ }, (browsers) =>
   prefix(["fit-content"], {
     props: sizeProps,
     feature: "intrinsic-width",
+    browsers,
+  }));
+
+// Stretch value
+import { prefixStretch } from "../lib/deps.js";
+
+f(prefixStretch, (browsers) =>
+  prefix(["stretch"], {
+    props: sizeProps,
+    feature: "css-width-stretch",
     browsers,
   }));
 
