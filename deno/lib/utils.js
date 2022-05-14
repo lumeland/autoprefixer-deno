@@ -76,3 +76,18 @@ export function splitSelector(selector) {
     });
   });
 }
+
+/**
+ * Return true if a given value only contains numbers.
+ * @param {*} value
+ * @returns {boolean}
+ */
+export function isPureNumber(value) {
+  if (typeof value === "number") {
+    return true;
+  }
+  if (typeof value === "string") {
+    return /^[0-9]+$/.test(value);
+  }
+  return false;
+}

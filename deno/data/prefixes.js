@@ -1061,15 +1061,6 @@ f(
     }),
 );
 
-// color-adjust
-import { prefixColorAdjust } from "../lib/deps.js";
-
-f(prefixColorAdjust, (browsers) =>
-  prefix(["color-adjust"], {
-    feature: "css-color-adjust",
-    browsers,
-  }));
-
 // text-orientation
 import { prefixTextOrientation } from "../lib/deps.js";
 
@@ -1078,3 +1069,15 @@ f(prefixTextOrientation, (browsers) =>
     feature: "css-text-orientation",
     browsers,
   }));
+
+// print-color-adjust
+import { prefixPrintAdjust } from "../lib/deps.js";
+
+f(
+  prefixPrintAdjust,
+  (browsers) =>
+    prefix(["print-color-adjust", "color-adjust"], {
+      feature: "css-print-color-adjust",
+      browsers,
+    }),
+);

@@ -1,4 +1,5 @@
 import Declaration from "../declaration.js";
+import { isPureNumber } from "../utils.js";
 
 class GridEnd extends Declaration {
   /**
@@ -26,8 +27,12 @@ class GridEnd extends Declaration {
         startDecl = d;
       });
       if (startDecl) {
-        let value = Number(decl.value) - Number(startDecl.value) + "";
-        clonedDecl.value = value;
+        if (isPureNumber(startDecl.value)) {
+          let value = Number(decl.value) - Number(startDecl.value) + "";
+          clonedDecl.value = value;
+        } else {
+          return undefined;
+        }
       } else {
         decl.warn(
           result,

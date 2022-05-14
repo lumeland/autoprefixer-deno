@@ -84,6 +84,18 @@ let clipper = autoprefixer({
 let example = autoprefixer({
   overrideBrowserslist: ["defaults"],
 });
+let autofiller = autoprefixer({
+  overrideBrowserslist: ["Chrome > 90", "Firefox >= 82"],
+});
+let content = autoprefixer({
+  overrideBrowserslist: [
+    "> 2%",
+    "last 2 years",
+    "ie 11",
+    "not ie_mob > 0",
+    "not dead",
+  ],
+});
 
 function prefixer(name) {
   if (
@@ -124,6 +136,14 @@ function prefixer(name) {
     return intrinsicer;
   } else if (name === "selectors" || name === "placeholder") {
     return selectorer;
+  } else if (name === "selectors" || name === "file-selector-button") {
+    return fileSelectorButtoner;
+  } else if (
+    name === "selectors" ||
+    name === "autofill" ||
+    name === "print-color-adjust"
+  ) {
+    return autofiller;
   } else if (name === "placeholder-shown") {
     return placeholderShowner;
   } else if (name === "backdrop-filter" || name === "overscroll-behavior") {
@@ -158,6 +178,8 @@ function prefixer(name) {
     return supporter;
   } else if (name === "transition-spec") {
     return transitionSpec;
+  } else if (name === "content") {
+    return content;
   } else {
     return compiler;
   }
@@ -165,7 +187,11 @@ function prefixer(name) {
 
 function read(name) {
   const file = new URL(`../test/cases/${name}.css`, import.meta.url).pathname;
-  return Deno.readTextFileSync(file);
+  try {
+    return Deno.readTextFileSync(file);
+  } catch {
+    console.error({ file });
+  }
 }
 
 function universalizer(string) {
@@ -222,7 +248,7 @@ const COMMONS = [
   "grid-template",
   "grid-template-areas",
   "grid-gap",
-  "color-adjust",
+  "print-color-adjust",
 ];
 
 let options = {
@@ -336,6 +362,12 @@ Deno.test("transition on vendor specific rule", () => {
 });
 Deno.test("ignore prefix in vendor at rules", () => {
   check("at-rules");
+});
+
+Deno.test("ignore content property", () => {
+  let input = read("content");
+  let result = postcss([prefixer("scope")]).process(input);
+  assertEquals(result.css, input);
 });
 
 Deno.test("uses control comments to whole scope", () => {
@@ -717,8 +749,20 @@ Deno.test("ignores modern direction", () => {
 Deno.test("supports overscroll-behavior", () => {
   check("overscroll-behavior");
 });
-Deno.test("supports color-adjust", () => {
-  check("color-adjust");
+Deno.test("supports print-color-adjust", () => {
+  let input = read("print-color-adjust");
+  let output = read("print-color-adjust.out");
+  let result = postcss([prefixer("print-color-adjust")]).process(input);
+
+  assertEquals(result.css, output);
+  assertEquals(
+    result.warnings().map((i) => i.toString()),
+    [
+      "autoprefixer: <css input>:2:3: Replace color-adjust " +
+      "to print-color-adjust. The color-adjust shorthand " +
+      "is currently deprecated.",
+    ],
+  );
 });
 Deno.test("supports backdrop-filter", () => {
   check("backdrop-filter");
