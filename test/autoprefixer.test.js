@@ -85,17 +85,17 @@ let example = autoprefixer({
   overrideBrowserslist: ["defaults"],
 });
 let autofiller = autoprefixer({
-  overrideBrowserslist: ['Chrome > 90', 'Firefox >= 82']
-})
+  overrideBrowserslist: ["Chrome > 90", "Firefox >= 82"],
+});
 let content = autoprefixer({
   overrideBrowserslist: [
-    '> 2%',
-    'last 2 years',
-    'ie 11',
-    'not ie_mob > 0',
-    'not dead'
-  ]
-})
+    "> 2%",
+    "last 2 years",
+    "ie 11",
+    "not ie_mob > 0",
+    "not dead",
+  ],
+});
 
 function prefixer(name) {
   if (
@@ -136,14 +136,14 @@ function prefixer(name) {
     return intrinsicer;
   } else if (name === "selectors" || name === "placeholder") {
     return selectorer;
-  } else if (name === 'selectors' || name === 'file-selector-button') {
-    return fileSelectorButtoner
+  } else if (name === "selectors" || name === "file-selector-button") {
+    return fileSelectorButtoner;
   } else if (
-    name === 'selectors' ||
-    name === 'autofill' ||
-    name === 'print-color-adjust'
+    name === "selectors" ||
+    name === "autofill" ||
+    name === "print-color-adjust"
   ) {
-    return autofiller
+    return autofiller;
   } else if (name === "placeholder-shown") {
     return placeholderShowner;
   } else if (name === "backdrop-filter" || name === "overscroll-behavior") {
@@ -178,8 +178,8 @@ function prefixer(name) {
     return supporter;
   } else if (name === "transition-spec") {
     return transitionSpec;
-  } else if (name === 'content') {
-    return content
+  } else if (name === "content") {
+    return content;
   } else {
     return compiler;
   }
@@ -364,11 +364,11 @@ Deno.test("ignore prefix in vendor at rules", () => {
   check("at-rules");
 });
 
-Deno.test('ignore content property', () => {
-  let input = read('content');
-  let result = postcss([prefixer('scope')]).process(input);
+Deno.test("ignore content property", () => {
+  let input = read("content");
+  let result = postcss([prefixer("scope")]).process(input);
   assertEquals(result.css, input);
-})
+});
 
 Deno.test("uses control comments to whole scope", () => {
   let input = read("scope");
@@ -749,21 +749,21 @@ Deno.test("ignores modern direction", () => {
 Deno.test("supports overscroll-behavior", () => {
   check("overscroll-behavior");
 });
-Deno.test('supports print-color-adjust', () => {
-  let input = read('print-color-adjust')
-  let output = read('print-color-adjust.out')
-  let result = postcss([prefixer('print-color-adjust')]).process(input)
+Deno.test("supports print-color-adjust", () => {
+  let input = read("print-color-adjust");
+  let output = read("print-color-adjust.out");
+  let result = postcss([prefixer("print-color-adjust")]).process(input);
 
-  assertEquals(result.css, output)
+  assertEquals(result.css, output);
   assertEquals(
-    result.warnings().map(i => i.toString()),
+    result.warnings().map((i) => i.toString()),
     [
-      'autoprefixer: <css input>:2:3: Replace color-adjust ' +
-        'to print-color-adjust. The color-adjust shorthand ' +
-        'is currently deprecated.'
-    ]
-  )
-})
+      "autoprefixer: <css input>:2:3: Replace color-adjust " +
+      "to print-color-adjust. The color-adjust shorthand " +
+      "is currently deprecated.",
+    ],
+  );
+});
 Deno.test("supports backdrop-filter", () => {
   check("backdrop-filter");
 });
