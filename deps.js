@@ -1,4 +1,4 @@
-export * as pico from "https://deno.land/std@0.141.0/fmt/colors.ts";
+export * as pico from "https://deno.land/std@0.142.0/fmt/colors.ts";
 export { default as browserslist } from "https://esm.sh/browserslist@4.20.3/index.js";
 export { default as parser } from "https://deno.land/x/postcss_value_parser@4.2.0/mod.js";
 import caniuse_lite from "../data/caniuse-lite.js";
