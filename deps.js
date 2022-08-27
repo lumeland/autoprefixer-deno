@@ -1,12 +1,12 @@
-export * as pico from "https://deno.land/std@0.142.0/fmt/colors.ts";
-export { default as browserslist } from "https://esm.sh/browserslist@4.20.3/index.js";
+export * as pico from "https://deno.land/std@0.153.0/fmt/colors.ts";
+export { default as browserslist } from "https://esm.sh/browserslist@4.21.3/index.js";
 export { default as parser } from "https://deno.land/x/postcss_value_parser@4.2.0/mod.js";
 import caniuse_lite from "../data/caniuse-lite.js";
 
 export { default as range } from "https://esm.sh/normalize-range@0.1.2/index.js";
 export { default as FractionJs } from "https://esm.sh/fraction.js@4.2.0/fraction.js";
 
-import postcss from "https://deno.land/x/postcss@8.4.13/mod.js";
+import postcss from "https://deno.land/x/postcss@8.4.16/mod.js";
 const { list, parse } = postcss;
 export { list, parse };
 

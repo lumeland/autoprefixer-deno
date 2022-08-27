@@ -1,97 +1,93 @@
-/* esm.sh - esbuild bundle(caniuse-lite@1.0.30001335/data/features/border-image) es2022 production */
+/* esm.sh - esbuild bundle(caniuse-lite@1.0.30001373/data/features/border-image) es2022 production */
 var s = Object.create;
-var A = Object.defineProperty;
-var p = Object.getOwnPropertyDescriptor;
-var S = Object.getOwnPropertyNames;
-var i = Object.getPrototypeOf, l = Object.prototype.hasOwnProperty;
-var D = (C, B) => () => (B || C((B = { exports: {} }).exports, B), B.exports);
-var E = (C, B, e, t) => {
+var d = Object.defineProperty;
+var l = Object.getOwnPropertyDescriptor;
+var u = Object.getOwnPropertyNames;
+var S = Object.getPrototypeOf, i = Object.prototype.hasOwnProperty;
+var m = (C, B) => () => (B || C((B = { exports: {} }).exports, B), B.exports);
+var n = (C, B, e, o) => {
   if (B && typeof B == "object" || typeof B == "function") {
-    for (let o of S(B)) {
-      !l.call(C, o) && o !== e && A(C, o, {
-        get: () => B[o],
-        enumerable: !(t = p(B, o)) || t.enumerable,
+    for (let t of u(B)) {
+      !i.call(C, t) && t !== e && d(C, t, {
+        get: () => B[t],
+        enumerable: !(o = l(B, t)) || o.enumerable,
       });
     }
   }
   return C;
 };
-var d = (
+var p = (
   C,
   B,
   e,
-) => (e = C != null ? s(i(C)) : {},
-  E(
+) => (e = C != null ? s(S(C)) : {},
+  n(
     B || !C || !C.__esModule
-      ? A(e, "default", { value: C, enumerable: !0 })
+      ? d(e, "default", { value: C, enumerable: !0 })
       : e,
     C,
   ));
-var r = D((I, f) => {
-  f.exports = {
+var A = m((F, r) => {
+  r.exports = {
     A: {
-      A: { "1": "B", "2": "J D E F A tB" },
+      A: { 1: "B", 2: "J D E F A zB" },
       B: {
-        "1": "L G M N O P Q R S T U V W Z a b c d e f g h i j X k H",
-        "129": "C K",
+        1: "L G M N O P Q R S T U V W X Y Z c d e f g h i j k l a m H",
+        129: "C K",
       },
       C: {
-        "1":
-          "HB IB JB KB LB MB NB OB PB kB QB lB RB SB Y TB UB VB WB XB YB ZB aB bB cB dB eB fB gB P Q R mB S T U V W Z a b c d e f g h i j X k H",
-        "2": "uB jB",
-        "260":
-          "0 1 2 3 4 5 6 7 8 9 G M N O m n o p q r s t u v w x y z AB BB CB DB EB FB GB",
-        "804": "I l J D E F A B C K L vB wB",
+        1: "JB KB LB MB NB OB PB QB RB nB SB oB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R pB S T U V W X Y Z c d e f g h i j k l a m H qB rB",
+        2: "0B mB",
+        260:
+          "0 1 2 3 4 5 6 7 8 9 G M N O o p q r s t u v w x y z AB BB CB DB EB FB GB HB IB",
+        804: "I n J D E F A B C K L 1B 2B",
       },
       D: {
-        "1":
-          "NB OB PB kB QB lB RB SB Y TB UB VB WB XB YB ZB aB bB cB dB eB fB gB P Q R S T U V W Z a b c d e f g h i j X k H xB yB zB",
-        "260": "IB JB KB LB MB",
-        "388": "0 1 2 3 4 5 6 7 8 9 x y z AB BB CB DB EB FB GB HB",
-        "1412": "G M N O m n o p q r s t u v w",
-        "1956": "I l J D E F A B C K L",
+        1: "PB QB RB nB SB oB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R S T U V W X Y Z c d e f g h i j k l a m H qB rB 3B",
+        260: "KB LB MB NB OB",
+        388: "0 1 2 3 4 5 6 7 8 9 z AB BB CB DB EB FB GB HB IB JB",
+        1412: "G M N O o p q r s t u v w x y",
+        1956: "I n J D E F A B C K L",
       },
       E: {
-        "1": "qB 8B",
-        "129": "A B C K L G 4B oB hB iB 5B 6B 7B pB",
-        "1412": "J D E F 2B 3B",
-        "1956": "I l 0B nB 1B",
+        1: "vB wB CC lB DC",
+        129: "A B C K L G 8B tB jB kB 9B AC BC uB",
+        1412: "J D E F 6B 7B",
+        1956: "I n 4B sB 5B",
       },
       F: {
-        "1":
-          "AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB Y TB UB VB WB XB YB ZB aB bB cB dB eB fB gB P Q R mB S T U V W",
-        "2": "F 9B AC",
-        "260": "5 6 7 8 9",
-        "388": "0 1 2 3 4 G M N O m n o p q r s t u v w x y z",
-        "1796": "BC CC",
-        "1828": "B C hB rB DC iB",
+        1: "CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R pB S T U V W X Y Z",
+        2: "F EC FC",
+        260: "7 8 9 AB BB",
+        388: "0 1 2 3 4 5 6 G M N O o p q r s t u v w x y z",
+        1796: "GC HC",
+        1828: "B C jB xB IC kB",
       },
       G: {
-        "1": "qB",
-        "129": "KC LC MC NC OC PC QC RC SC TC UC VC WC XC pB",
-        "1412": "E GC HC IC JC",
-        "1956": "nB EC sB FC",
+        1: "vB wB lB",
+        129: "PC QC RC SC TC UC VC WC XC YC ZC aC bC cC uB",
+        1412: "E LC MC NC OC",
+        1956: "sB JC yB KC",
       },
-      H: { "1828": "YC" },
-      I: { "1": "H", "388": "dC eC", "1956": "jB I ZC aC bC cC sB" },
-      J: { "1412": "A", "1924": "D" },
-      K: { "1": "Y", "2": "A", "1828": "B C hB rB iB" },
-      L: { "1": "H" },
-      M: { "1": "X" },
-      N: { "1": "B", "2": "A" },
-      O: { "388": "fC" },
-      P: { "1": "iC jC kC oB lC mC nC oC pC qC", "260": "gC hC", "388": "I" },
-      Q: { "260": "rC" },
-      R: { "260": "sC" },
-      S: { "260": "tC" },
+      H: { 1828: "dC" },
+      I: { 1: "H", 388: "iC jC", 1956: "mB I eC fC gC hC yB" },
+      J: { 1412: "A", 1924: "D" },
+      K: { 1: "b", 2: "A", 1828: "B C jB xB kB" },
+      L: { 1: "H" },
+      M: { 1: "a" },
+      N: { 1: "B", 2: "A" },
+      O: { 388: "kC" },
+      P: { 1: "nC oC pC tB qC rC sC tC uC lB vC", 260: "lC mC", 388: "I" },
+      Q: { 260: "wC" },
+      R: { 260: "xC" },
+      S: { 260: "yC" },
     },
     B: 4,
     C: "CSS3 Border images",
   };
 });
-var a = d(r()),
-  m = d(r()),
-  { A: c, B: J, C: K } = m,
-  { default: F, ...G } = m,
-  L = a.default ?? F ?? G;
-export { c as A, J as B, K as C, L as default };
+var f = p(A()),
+  { A: G, B: H, C: I } = f,
+  { default: a, ...D } = f,
+  c = a !== void 0 ? a : D;
+export { c as default, G as A, H as B, I as C };

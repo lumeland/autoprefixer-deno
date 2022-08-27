@@ -1,6 +1,7 @@
 import { convert } from "https://deno.land/x/nodedeno@v0.2.12/mod.js";
 
 const features = [
+  "aac",
   "border-radius",
   "css-boxshadow",
   "css-animation",
@@ -69,13 +70,13 @@ const features = [
 ];
 
 const download = {
-  "https://esm.sh/v83/caniuse-lite@1.0.30001335/es2022/caniuse-lite.js":
+  "https://esm.sh/v92/caniuse-lite@1.0.30001373/es2022/caniuse-lite.js":
     "data/caniuse-lite.js",
 };
 
 features.forEach((feature) => {
   const url =
-    `https://esm.sh/v83/caniuse-lite@1.0.30001335/es2022/data/features/${feature}.js`;
+    `https://esm.sh/v92/caniuse-lite@1.0.30001373/es2022/data/features/${feature}.js`;
   const dest = `data/features/${feature}.js`;
   download[url] = dest;
 });
