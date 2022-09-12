@@ -1,4 +1,4 @@
-export * as pico from "https://deno.land/std@0.153.0/fmt/colors.ts";
+export * as pico from "https://deno.land/std@0.155.0/fmt/colors.ts";
 export { default as browserslist } from "https://esm.sh/browserslist@4.21.3/index.js";
 export { default as parser } from "https://deno.land/x/postcss_value_parser@4.2.0/mod.js";
 import caniuse_lite from "../data/caniuse-lite.js";
@@ -71,7 +71,6 @@ export { default as prefixTextEmphasis } from "../data/features/text-emphasis.js
 export { default as prefixGrid } from "../data/features/css-grid.js";
 export { default as prefixTextSpacing } from "../data/features/css-text-spacing.js";
 export { default as prefixAnyLink } from "../data/features/css-any-link.js";
-export { default as prefixBidi } from "../data/features/css-unicode-bidi.js";
 export { default as prefixOverscroll } from "../data/features/css-overscroll-behavior.js";
 export { default as prefixColorAdjust } from "../data/features/css-color-adjust.js";
 export { default as prefixTextOrientation } from "../data/features/css-text-orientation.js";

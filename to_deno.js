@@ -58,7 +58,6 @@ const features = [
   "css-grid",
   "css-text-spacing",
   "css-any-link",
-  "css-unicode-bidi",
   "css-overscroll-behavior",
   "css-color-adjust",
   "css-text-orientation",
