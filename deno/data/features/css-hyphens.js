@@ -1,4 +1,4 @@
-/* esm.sh - esbuild bundle(caniuse-lite@1.0.30001373/data/features/css-hyphens) es2022 production */
+/* esm.sh - esbuild bundle(caniuse-lite@1.0.30001399/data/features/css-hyphens) es2022 production */
 var r = Object.create;
 var A = Object.defineProperty;
 var l = Object.getOwnPropertyDescriptor;
@@ -27,61 +27,61 @@ var i = (
       : e,
     C,
   ));
-var d = H((F, a) => {
+var d = H((E, a) => {
   a.exports = {
     A: {
-      A: { 2: "J D E F zB", 33: "A B" },
+      A: { 2: "J D E F 1B", 33: "A B" },
       B: {
         33: "C K L G M N O",
         132: "P Q R S T U V W",
-        260: "X Y Z c d e f g h i j k l a m H",
+        260: "X Y Z c d e f g h i j k l m n o a H",
       },
       C: {
-        1: "CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB nB SB oB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R pB S T U V W X Y Z c d e f g h i j k l a m H qB rB",
-        2: "0B mB I n 1B 2B",
+        1: "EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB pB UB qB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R rB S T U V W X Y Z c d e f g h i j k l m n o a H sB",
+        2: "2B oB I p 3B 4B",
         33:
-          "0 1 2 3 4 5 6 7 8 9 J D E F A B C K L G M N O o p q r s t u v w x y z AB BB",
+          "0 1 2 3 4 5 6 7 8 9 J D E F A B C K L G M N O q r s t u v w x y z AB BB CB DB",
       },
       D: {
-        1: "X Y Z c d e f g h i j k l a m H qB rB 3B",
-        2: "0 1 2 3 4 5 6 7 8 9 I n J D E F A B C K L G M N O o p q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB",
+        1: "X Y Z c d e f g h i j k l m n o a H sB 5B 6B",
+        2: "0 1 2 3 4 5 6 7 8 9 I p J D E F A B C K L G M N O q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB",
         132:
-          "OB PB QB RB nB SB oB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R S T U V W",
+          "QB RB SB TB pB UB qB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R S T U V W",
       },
       E: {
-        2: "I n 4B sB",
+        2: "I p 7B tB",
         33:
-          "J D E F A B C K L G 5B 6B 7B 8B tB jB kB 9B AC BC uB vB wB CC lB DC",
+          "J D E F A B C K L G 8B 9B AC BC uB lB mB CC DC EC vB wB xB yB nB FC",
       },
       F: {
-        2: "0 1 2 3 4 5 6 7 8 9 F B C G M N O o p q r s t u v w x y z AB EC FC GC HC jB xB IC kB",
+        2: "0 1 2 3 4 5 6 7 8 9 F B C G M N O q r s t u v w x y z AB BB CB GC HC IC JC lB zB KC mB",
         132:
-          "BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R pB S T U V W X Y Z",
+          "DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB UB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R rB S T U V W X Y Z",
       },
       G: {
-        2: "sB JC",
+        2: "tB LC",
         33:
-          "E yB KC LC MC NC OC PC QC RC SC TC UC VC WC XC YC ZC aC bC cC uB vB wB lB",
+          "E 0B MC NC OC PC QC RC SC TC UC VC WC XC YC ZC aC bC cC dC eC vB wB xB yB nB",
       },
-      H: { 2: "dC" },
-      I: { 1: "H", 2: "mB I eC fC gC hC yB iC jC" },
+      H: { 2: "fC" },
+      I: { 1: "H", 2: "oB I gC hC iC jC 0B kC lC" },
       J: { 2: "D A" },
-      K: { 1: "b", 2: "A B C jB xB kB" },
+      K: { 1: "b", 2: "A B C lB zB mB" },
       L: { 1: "H" },
       M: { 1: "a" },
       N: { 2: "A B" },
-      O: { 4: "kC" },
-      P: { 1: "mC nC oC pC tB qC rC sC tC uC lB vC", 2: "I", 132: "lC" },
-      Q: { 2: "wC" },
-      R: { 132: "xC" },
-      S: { 1: "yC" },
+      O: { 4: "mC" },
+      P: { 1: "oC pC qC rC uB sC tC uC vC wC nB xC yC", 2: "I", 132: "nC" },
+      Q: { 2: "zC" },
+      R: { 132: "0C" },
+      S: { 1: "1C" },
     },
     B: 5,
     C: "CSS Hyphenation",
   };
 });
-var n = i(d()),
-  { A: G, B: I, C: c } = n,
-  { default: f, ...D } = n,
-  m = f !== void 0 ? f : D;
-export { c as C, G as A, I as B, m as default };
+var f = i(d()),
+  { A: F, B: G, C: I } = f,
+  { default: n, ...m } = f,
+  c = n !== void 0 ? n : m;
+export { c as default, F as A, G as B, I as C };

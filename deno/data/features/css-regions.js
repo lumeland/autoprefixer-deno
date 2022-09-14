@@ -1,78 +1,78 @@
-/* esm.sh - esbuild bundle(caniuse-lite@1.0.30001373/data/features/css-regions) es2022 production */
-var s = Object.create;
+/* esm.sh - esbuild bundle(caniuse-lite@1.0.30001399/data/features/css-regions) es2022 production */
+var r = Object.create;
 var A = Object.defineProperty;
-var l = Object.getOwnPropertyDescriptor;
-var n = Object.getOwnPropertyNames;
+var s = Object.getOwnPropertyDescriptor;
+var l = Object.getOwnPropertyNames;
 var u = Object.getPrototypeOf, S = Object.prototype.hasOwnProperty;
 var i = (C, B) => () => (B || C((B = { exports: {} }).exports, B), B.exports);
-var p = (C, B, e, o) => {
+var m = (C, B, e, o) => {
   if (B && typeof B == "object" || typeof B == "function") {
-    for (let t of n(B)) {
+    for (let t of l(B)) {
       !S.call(C, t) && t !== e && A(C, t, {
         get: () => B[t],
-        enumerable: !(o = l(B, t)) || o.enumerable,
+        enumerable: !(o = s(B, t)) || o.enumerable,
       });
     }
   }
   return C;
 };
-var D = (
+var p = (
   C,
   B,
   e,
-) => (e = C != null ? s(u(C)) : {},
-  p(
+) => (e = C != null ? r(u(C)) : {},
+  m(
     B || !C || !C.__esModule
       ? A(e, "default", { value: C, enumerable: !0 })
       : e,
     C,
   ));
-var a = i((G, d) => {
+var a = i((F, d) => {
   d.exports = {
     A: {
-      A: { 2: "J D E F zB", 420: "A B" },
+      A: { 2: "J D E F 1B", 420: "A B" },
       B: {
-        2: "P Q R S T U V W X Y Z c d e f g h i j k l a m H",
+        2: "P Q R S T U V W X Y Z c d e f g h i j k l m n o a H",
         420: "C K L G M N O",
       },
       C: {
-        2: "0 1 2 3 4 5 6 7 8 9 0B mB I n J D E F A B C K L G M N O o p q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB nB SB oB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R pB S T U V W X Y Z c d e f g h i j k l a m H qB rB 1B 2B",
+        2: "0 1 2 3 4 5 6 7 8 9 2B oB I p J D E F A B C K L G M N O q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB pB UB qB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R rB S T U V W X Y Z c d e f g h i j k l m n o a H sB 3B 4B",
       },
       D: {
-        2: "4 5 6 7 8 9 I n J D E F A B C K L AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB nB SB oB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R S T U V W X Y Z c d e f g h i j k l a m H qB rB 3B",
+        2: "6 7 8 9 I p J D E F A B C K L AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB pB UB qB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R S T U V W X Y Z c d e f g h i j k l m n o a H sB 5B 6B",
         36: "G M N O",
-        66: "0 1 2 3 o p q r s t u v w x y z",
+        66: "0 1 2 3 4 5 q r s t u v w x y z",
       },
       E: {
-        2: "I n J C K L G 4B sB 5B jB kB 9B AC BC uB vB wB CC lB DC",
-        33: "D E F A B 6B 7B 8B tB",
+        2: "I p J C K L G 7B tB 8B lB mB CC DC EC vB wB xB yB nB FC",
+        33: "D E F A B 9B AC BC uB",
       },
       F: {
-        2: "0 1 2 3 4 5 6 7 8 9 F B C G M N O o p q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R pB S T U V W X Y Z EC FC GC HC jB xB IC kB",
+        2: "0 1 2 3 4 5 6 7 8 9 F B C G M N O q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB UB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R rB S T U V W X Y Z GC HC IC JC lB zB KC mB",
       },
       G: {
-        2: "sB JC yB KC LC TC UC VC WC XC YC ZC aC bC cC uB vB wB lB",
-        33: "E MC NC OC PC QC RC SC",
+        2: "tB LC 0B MC NC VC WC XC YC ZC aC bC cC dC eC vB wB xB yB nB",
+        33: "E OC PC QC RC SC TC UC",
       },
-      H: { 2: "dC" },
-      I: { 2: "mB I H eC fC gC hC yB iC jC" },
+      H: { 2: "fC" },
+      I: { 2: "oB I H gC hC iC jC 0B kC lC" },
       J: { 2: "D A" },
-      K: { 2: "A B C b jB xB kB" },
+      K: { 2: "A B C b lB zB mB" },
       L: { 2: "H" },
       M: { 2: "a" },
       N: { 420: "A B" },
-      O: { 2: "kC" },
-      P: { 2: "I lC mC nC oC pC tB qC rC sC tC uC lB vC" },
-      Q: { 2: "wC" },
-      R: { 2: "xC" },
-      S: { 2: "yC" },
+      O: { 2: "mC" },
+      P: { 2: "I nC oC pC qC rC uB sC tC uC vC wC nB xC yC" },
+      Q: { 2: "zC" },
+      R: { 2: "0C" },
+      S: { 2: "1C" },
     },
     B: 5,
     C: "CSS Regions",
   };
 });
-var r = D(a()),
-  { A: H, B: I, C: R } = r,
-  { default: f, ...E } = r,
-  c = f !== void 0 ? f : E;
-export { c as default, H as A, I as B, R as C };
+var n = p(a()),
+  { A: G, B: H, C: I } = n,
+  { default: f, ...D } = n,
+  R = f !== void 0 ? f : D;
+export { G as A, H as B, I as C, R as default };

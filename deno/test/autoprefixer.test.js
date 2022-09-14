@@ -1042,7 +1042,7 @@ Deno.test("supports text-decoration", () => {
   let instance = prefixer("text-decoration");
   let result = postcss([instance]).process(input);
   assertEquals(result.warnings().map((i) => i.toString()), [
-    "autoprefixer: <css input>:26:3: Replace text-decoration-skip: ink " +
+    "autoprefixer: <css input>:32:3: Replace text-decoration-skip: ink " +
     "to text-decoration-skip-ink: auto, because spec had been changed",
   ]);
 });

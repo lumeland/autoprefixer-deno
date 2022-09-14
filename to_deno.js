@@ -66,16 +66,23 @@ const features = [
   "css-width-stretch",
   "css-print-color-adjust",
   "css-featurequeries",
+  "mdn-text-decoration-shorthand",
+  "mdn-text-decoration-color",
+  "mdn-text-decoration-line",
+  "mdn-text-decoration-style",
+  "mdn-css-unicode-bidi-isolate",
+  "mdn-css-unicode-bidi-plaintext",
+  "mdn-css-unicode-bidi-isolate-override",
 ];
 
 const download = {
-  "https://esm.sh/v92/caniuse-lite@1.0.30001373/es2022/caniuse-lite.js":
+  "https://esm.sh/v92/caniuse-lite@1.0.30001399/es2022/caniuse-lite.js":
     "data/caniuse-lite.js",
 };
 
 features.forEach((feature) => {
   const url =
-    `https://esm.sh/v92/caniuse-lite@1.0.30001373/es2022/data/features/${feature}.js`;
+    `https://esm.sh/v92/caniuse-lite@1.0.30001399/es2022/data/features/${feature}.js`;
   const dest = `data/features/${feature}.js`;
   download[url] = dest;
 });

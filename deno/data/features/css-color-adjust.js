@@ -1,81 +1,81 @@
-/* esm.sh - esbuild bundle(caniuse-lite@1.0.30001373/data/features/css-color-adjust) es2022 production */
+/* esm.sh - esbuild bundle(caniuse-lite@1.0.30001399/data/features/css-color-adjust) es2022 production */
 var l = Object.create;
 var d = Object.defineProperty;
-var s = Object.getOwnPropertyDescriptor;
-var u = Object.getOwnPropertyNames;
-var S = Object.getPrototypeOf, c = Object.prototype.hasOwnProperty;
-var n = (C, B) => () => (B || C((B = { exports: {} }).exports, B), B.exports);
-var p = (C, B, e, o) => {
+var n = Object.getOwnPropertyDescriptor;
+var s = Object.getOwnPropertyNames;
+var u = Object.getPrototypeOf, p = Object.prototype.hasOwnProperty;
+var S = (C, B) => () => (B || C((B = { exports: {} }).exports, B), B.exports);
+var c = (C, B, t, o) => {
   if (B && typeof B == "object" || typeof B == "function") {
-    for (let t of u(B)) {
-      !c.call(C, t) && t !== e && d(C, t, {
-        get: () => B[t],
-        enumerable: !(o = s(B, t)) || o.enumerable,
+    for (let e of s(B)) {
+      !p.call(C, e) && e !== t && d(C, e, {
+        get: () => B[e],
+        enumerable: !(o = n(B, e)) || o.enumerable,
       });
     }
   }
   return C;
 };
-var D = (
+var i = (
   C,
   B,
-  e,
-) => (e = C != null ? l(S(C)) : {},
-  p(
+  t,
+) => (t = C != null ? l(u(C)) : {},
+  c(
     B || !C || !C.__esModule
-      ? d(e, "default", { value: C, enumerable: !0 })
-      : e,
+      ? d(t, "default", { value: C, enumerable: !0 })
+      : t,
     C,
   ));
-var a = n((G, A) => {
-  A.exports = {
+var A = S((E, r) => {
+  r.exports = {
     A: {
-      A: { 2: "J D E F A B zB" },
+      A: { 2: "J D E F A B 1B" },
       B: {
         2: "C K L G M N O",
-        33: "P Q R S T U V W X Y Z c d e f g h i j k l a m H",
+        33: "P Q R S T U V W X Y Z c d e f g h i j k l m n o a H",
       },
       C: {
-        1: "HB IB JB KB LB MB NB OB PB QB RB nB SB oB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R pB S T U V W X Y Z c d e f g h i j k l a m H qB rB",
-        2: "0 1 2 3 4 5 6 7 8 9 0B mB I n J D E F A B C K L G M N O o p q r s t u v w x y z AB BB CB DB EB FB GB 1B 2B",
+        1: "JB KB LB MB NB OB PB QB RB SB TB pB UB qB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R rB S T U V W X Y Z c d e f g h i j k l m n o a H sB",
+        2: "0 1 2 3 4 5 6 7 8 9 2B oB I p J D E F A B C K L G M N O q r s t u v w x y z AB BB CB DB EB FB GB HB IB 3B 4B",
       },
       D: {
-        16: "I n J D E F A B C K L G M N O",
+        16: "I p J D E F A B C K L G M N O",
         33:
-          "0 1 2 3 4 5 6 7 8 9 o p q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB nB SB oB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R S T U V W X Y Z c d e f g h i j k l a m H qB rB 3B",
+          "0 1 2 3 4 5 6 7 8 9 q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB pB UB qB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R S T U V W X Y Z c d e f g h i j k l m n o a H sB 5B 6B",
       },
       E: {
-        2: "I n 4B sB 5B",
-        33: "J D E F A B C K L G 6B 7B 8B tB jB kB 9B AC BC uB vB wB CC lB DC",
+        2: "I p 7B tB 8B",
+        33: "J D E F A B C K L G 9B AC BC uB lB mB CC DC EC vB wB xB yB nB FC",
       },
       F: {
-        2: "F B C EC FC GC HC jB xB IC kB",
+        2: "F B C GC HC IC JC lB zB KC mB",
         33:
-          "0 1 2 3 4 5 6 7 8 9 G M N O o p q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB UB b VB WB XB YB ZB aB bB cB dB eB fB gB hB iB P Q R pB S T U V W X Y Z",
+          "0 1 2 3 4 5 6 7 8 9 G M N O q r s t u v w x y z AB BB CB DB EB FB GB HB IB JB KB LB MB NB OB PB QB RB SB TB UB VB WB b XB YB ZB aB bB cB dB eB fB gB hB iB jB kB P Q R rB S T U V W X Y Z",
       },
       G: {
         16:
-          "E sB JC yB KC LC MC NC OC PC QC RC SC TC UC VC WC XC YC ZC aC bC cC uB vB wB lB",
+          "E tB LC 0B MC NC OC PC QC RC SC TC UC VC WC XC YC ZC aC bC cC dC eC vB wB xB yB nB",
       },
-      H: { 2: "dC" },
-      I: { 16: "mB I eC fC gC hC yB iC jC", 33: "H" },
+      H: { 2: "fC" },
+      I: { 16: "oB I gC hC iC jC 0B kC lC", 33: "H" },
       J: { 16: "D A" },
-      K: { 2: "A B C jB xB kB", 33: "b" },
+      K: { 2: "A B C lB zB mB", 33: "b" },
       L: { 16: "H" },
       M: { 1: "a" },
       N: { 16: "A B" },
-      O: { 16: "kC" },
-      P: { 16: "I lC mC nC oC pC tB qC rC sC tC uC lB vC" },
-      Q: { 33: "wC" },
-      R: { 16: "xC" },
-      S: { 1: "yC" },
+      O: { 16: "mC" },
+      P: { 16: "I nC oC pC qC rC uB sC tC uC vC wC nB xC yC" },
+      Q: { 33: "zC" },
+      R: { 16: "0C" },
+      S: { 1: "1C" },
     },
     B: 5,
-    C: "CSS color-adjust",
+    C: "CSS print-color-adjust",
   };
 });
-var f = D(a()),
-  { A: H, B: I, C: i } = f,
-  { default: r, ...E } = f,
-  m = r !== void 0 ? r : E;
-export { H as A, I as B, i as C, m as default };
+var f = i(A()),
+  { A: F, B: G, C: H } = f,
+  { default: a, ...m } = f,
+  I = a !== void 0 ? a : m;
+export { F as A, G as B, H as C, I as default };
