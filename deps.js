@@ -1,5 +1,5 @@
-export * as pico from "https://deno.land/std@0.155.0/fmt/colors.ts";
-export { default as browserslist } from "https://esm.sh/browserslist@4.21.3/index.js";
+export * as pico from "https://deno.land/std@0.157.0/fmt/colors.ts";
+export { default as browserslist } from "https://esm.sh/browserslist@4.21.4/index.js";
 export { default as parser } from "https://deno.land/x/postcss_value_parser@4.2.0/mod.js";
 import caniuse_lite from "../data/caniuse-lite.js";
 
